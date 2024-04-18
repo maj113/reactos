@@ -35,7 +35,7 @@ set_target_cpp_properties(vfd WITH_EXCEPTIONS)
 
 # Okay - After a long investigation this modules PDBs are just absolutely fighting github actions
 if(MSVC)
-    target_compile_options(vfd PRIVATE /MP) #
+    target_compile_options(vfd PRIVATE "/MP") #
     target_link_options(vfd PRIVATE "/pdbrpc:no")
 endif()
 
