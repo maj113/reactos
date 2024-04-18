@@ -55,7 +55,7 @@ if(ARCH STREQUAL "i386")
     if(CMAKE_C_COMPILER_ID STREQUAL "Clang")
         add_compile_options(-march=${OARCH})
     else()
-        add_compile_options(/arch:AVX2)
+        add_compile_options(/arch:SSE2)
     endif()
 endif()
 
