@@ -77,7 +77,7 @@ if(ARCH STREQUAL "amd64" AND MSVC_VERSION GREATER 1922)
 endif()
 
 # Generate Warnings Level 3
-add_compile_options(/Wall)
+add_compile_options(/W2)
 
 # Disable overly sensitive warnings as well as those that generally aren't
 # useful to us.
