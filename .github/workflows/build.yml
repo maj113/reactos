@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]
-        toolset: ['14.40'] # VS 2019, 2017, and 2015 (see below)
+        toolset: ['14.39'] # VS 2019, 2017, and 2015 (see below)
         arch: [i386]
         config: [Debug]
         dllver: ['0x600']
