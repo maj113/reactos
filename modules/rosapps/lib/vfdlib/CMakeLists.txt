@@ -34,10 +34,7 @@ target_link_libraries(vfd zlib_solo uuid cppstl)
 set_target_cpp_properties(vfd WITH_EXCEPTIONS)
 
 # Okay - After a long investigation this modules PDBs are just absolutely fighting github actions
-if(MSVC)
-    target_compile_options(vfd PRIVATE "/MP") #
-    target_link_options(vfd PRIVATE "/pdbrpc:no")
-endif()
+
 
 add_importlibs(vfd advapi32 user32 gdi32 shell32 comdlg32 comctl32 ole32 version psapi msvcrt kernel32 ntdll)
 add_dependencies(vfd vfdmsg_lib)

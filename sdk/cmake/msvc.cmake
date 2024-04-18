@@ -78,6 +78,8 @@ endif()
 
 # Generate Warnings Level 3
 add_compile_options(/W2)
+add_compile_options(/MP)
+add_link_options(/pdbrpc:no)
 
 # Disable overly sensitive warnings as well as those that generally aren't
 # useful to us.
