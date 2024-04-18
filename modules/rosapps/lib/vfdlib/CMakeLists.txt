@@ -35,7 +35,7 @@ set_target_cpp_properties(vfd WITH_EXCEPTIONS)
 
 # Okay - After a long investigation this modules PDBs are just absolutely fighting github actions
 if(MSVC)
-    target_link_options(vfd PRIVATE "/DEBUG:NONE")
+    target_link_options(vfd PRIVATE "/DEBUG:FASTLINK")
 endif()
 
 add_importlibs(vfd advapi32 user32 gdi32 shell32 comdlg32 comctl32 ole32 version psapi msvcrt kernel32 ntdll)
