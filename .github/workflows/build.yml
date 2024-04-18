@@ -8,7 +8,7 @@ jobs:
         os: [windows-latest]
         toolset: ['14.39'] # VS 2019, 2017, and 2015 (see below)
         arch: [i386]
-        config: [Debug]
+        config: [Release]
         dllver: ['0x600']
       fail-fast: false
     runs-on: ${{matrix.os}}
