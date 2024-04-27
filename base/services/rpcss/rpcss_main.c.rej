@@ -1,0 +1,9 @@
+diff a/base/services/rpcss/rpcss_main.c b/base/services/rpcss/rpcss_main.c	(rejected hunks)
+@@ -28,6 +28,7 @@
+ #include "winsvc.h"
+ #include "irot.h"
+ #include "epm.h"
++#include "irpcss.h"
+ 
+ #include "wine/debug.h"
+ 
