@@ -16,6 +16,7 @@
 
 #include <irot_s.h>
 #include <epm_s.h>
+#include <irpcss_s.h>
 
 #include <wine/list.h>
 
