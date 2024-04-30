@@ -6,7 +6,12 @@ add_definitions(
     -D__WINESRC__
     -D_RPCRT4_
     -DCOM_NO_WINDOWS_H
-    -DMSWMSG)
+    -DMSWMSG
+    -Dwcsnicmp=_wcsnicmp
+    -Dstrdup=_strdup
+    -Dwcsdup=_wcsdup)
+
+remove_definitions(-D_CRT_NON_CONFORMING_SWPRINTFS -D__ROS_LONG64__)
 
 include_directories(BEFORE ${REACTOS_SOURCE_DIR}/sdk/include/reactos/wine)
 spec2def(rpcrt4.dll rpcrt4.spec ADD_IMPORTLIB)
@@ -65,7 +70,7 @@ endif()
 
 set_module_type(rpcrt4 win32dll)
 target_link_libraries(rpcrt4 wine uuid ${PSEH_LIB})
-add_delay_importlibs(rpcrt4 iphlpapi wininet secur32 user32 oleaut32)
+add_delay_importlibs(rpcrt4 iphlpapi wininet secur32 user32 ole32 oleaut32)
 add_importlibs(rpcrt4 advapi32 advapi32_vista kernel32_vista ws2_32 msvcrt kernel32 ntdll)
 add_dependencies(rpcrt4 ndr_types_header)
 add_pch(rpcrt4 precomp.h "${PCH_SKIP_SOURCE}")
