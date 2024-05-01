@@ -122,6 +122,7 @@
 122 stdcall NDRSContextUnmarshall(ptr long)
 123 stdcall NDRSContextUnmarshallEx(ptr ptr long)
 124 stub NDRcopy
+@ varargs -arch=win64 Ndr64AsyncClientCall(ptr long ptr)
 125 stdcall NdrAllocate(ptr long)
 126 varargs NdrAsyncClientCall(ptr ptr)
 127 stdcall NdrAsyncServerCall(ptr)
@@ -134,6 +135,7 @@
 134 stdcall NdrClearOutParameters(ptr ptr ptr)
 135 varargs -arch=i386 NdrClientCall(ptr ptr) NdrClientCall2
 136 varargs NdrClientCall2(ptr ptr)
+@ varargs -arch=win64 NdrClientCall3(ptr long ptr)
 137 stdcall NdrClientContextMarshall(ptr ptr long)
 138 stdcall NdrClientContextUnmarshall(ptr ptr ptr)
 139 stub NdrClientInitialize
@@ -314,6 +316,7 @@
 313 stdcall NdrXmitOrRepAsMarshall(ptr ptr ptr)
 314 stdcall NdrXmitOrRepAsMemorySize(ptr ptr)
 315 stdcall NdrXmitOrRepAsUnmarshall(ptr ptr ptr long)
+@ stdcall -arch=!i386 NdrpClientCall2(ptr ptr ptr ptr)
 316 stub NdrpCreateProxy
 317 stub NdrpCreateStub
 318 stub NdrpGetProcFormatString
@@ -381,7 +384,7 @@
 380 stdcall RpcGetAsyncCallStatus(ptr) RpcAsyncGetCallStatus
 381 stdcall RpcGetAuthorizationContextForClient(ptr long ptr ptr int64 long ptr ptr)
 382 stub RpcIfIdVectorFree
-383 stub RpcIfInqId
+383 stdcall RpcIfInqId(ptr ptr)
 384 stdcall RpcImpersonateClient(ptr)
 385 stdcall RpcInitializeAsyncHandle(ptr long) RpcAsyncInitializeHandle
 386 stdcall RpcMgmtEnableIdleCleanup()
@@ -485,7 +488,7 @@
 484 stub SimpleTypeAlignment
 485 stub SimpleTypeBufferSize
 486 stub SimpleTypeMemorySize
-487 stdcall TowerConstruct(ptr ptr ptr ptr ptr ptr)
+487 stdcall TowerConstruct(ptr ptr str str str ptr)
 488 stdcall TowerExplode(ptr ptr ptr ptr ptr ptr)
 489 stdcall UuidCompare(ptr ptr ptr)
 490 stdcall UuidCreate(ptr)
