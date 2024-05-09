@@ -40,6 +40,22 @@ typedef _Return_type_success_(return >= 0) LONG NTSTATUS;
 typedef NTSTATUS *PNTSTATUS;
 #endif
 
+#define BCRYPT_KDF_HASH                     L"HASH"
+#define BCRYPT_KDF_HMAC                     L"HMAC"
+#define BCRYPT_KDF_TLS_PRF                  L"TLS_PRF"
+
+//#if (NTDDI_VERSION >= NTDDI_WINBLUE)
+#define BCRYPT_KDF_RAW_SECRET               L"TRUNCATE"
+//#endif
+
+#define KDF_HASH_ALGORITHM      0x0
+#define KDF_SECRET_PREPEND      0x1
+#define KDF_SECRET_APPEND       0x2
+#define KDF_HMAC_KEY            0x3
+#define KDF_TLS_PRF_LABEL       0x4
+#define KDF_TLS_PRF_SEED        0x5
+#define KDF_SECRET_HANDLE       0x6
+
 #define BCRYPT_CHAIN_MODE_NA        L"ChainingModeN/A"
 #define BCRYPT_CHAIN_MODE_CBC       L"ChainingModeCBC"
 #define BCRYPT_CHAIN_MODE_ECB       L"ChainingModeECB"
@@ -281,6 +297,45 @@ NTSTATUS WINAPI BCryptOpenAlgorithmProvider(BCRYPT_ALG_HANDLE *, LPCWSTR, LPCWST
 NTSTATUS WINAPI BCryptSetProperty(BCRYPT_HANDLE, LPCWSTR, PUCHAR, ULONG, ULONG);
 NTSTATUS WINAPI BCryptDuplicateHash(BCRYPT_HASH_HANDLE, BCRYPT_HASH_HANDLE *, UCHAR *, ULONG, ULONG);
 NTSTATUS WINAPI BCryptVerifySignature(BCRYPT_KEY_HANDLE, void *, UCHAR *, ULONG, UCHAR *, ULONG, ULONG);
+
+// Interface registration flags
+#define CRYPT_MIN_DEPENDENCIES      (0x00000001)
+#define CRYPT_PROCESS_ISOLATE       (0x00010000) // User-mode only
+
+// Processor modes supported by a provider
+//
+// (Valid for BCryptQueryProviderRegistration and BCryptResolveProviders):
+//
+#define CRYPT_UM                    (0x00000001)    // User mode only
+#define CRYPT_KM                    (0x00000002)    // Kernel mode only
+#define CRYPT_MM                    (0x00000003)    // Multi-mode: Must support BOTH UM and KM
+//
+// (Valid only for BCryptQueryProviderRegistration):
+//
+#define CRYPT_ANY                   (0x00000004)    // Wildcard: Either UM, or KM, or both
+
+
+// Write behavior flags
+#define CRYPT_OVERWRITE             (0x00000001)
+
+// Configuration tables
+#define CRYPT_LOCAL                 (0x00000001)
+#define CRYPT_DOMAIN                (0x00000002)
+
+// Context configuration flags
+#define CRYPT_EXCLUSIVE             (0x00000001)
+#define CRYPT_OVERRIDE              (0x00010000) // Enterprise table only
+
+// Resolution and enumeration flags
+#define CRYPT_ALL_FUNCTIONS         (0x00000001)
+#define CRYPT_ALL_PROVIDERS         (0x00000002)
+
+// Priority list positions
+#define CRYPT_PRIORITY_TOP          (0x00000000)
+#define CRYPT_PRIORITY_BOTTOM       (0xFFFFFFFF)
+
+// Default system-wide context
+#define CRYPT_DEFAULT_CONTEXT       L"Default"
 
 typedef struct _CRYPT_INTERFACE_REG
 {
