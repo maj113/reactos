@@ -9,8 +9,6 @@
 #define _INC_WINDOWS
 
 #define COBJMACROS
-#define NONAMELESSUNION
-#define NONAMELESSSTRUCT
 
 #include <ntstatus.h>
 #define WIN32_NO_STATUS
@@ -21,6 +19,7 @@
 #include <objbase.h>
 #include <rpcproxy.h>
 #include <security.h>
+
 
 #include <wine/debug.h>
 #include <wine/exception.h>
