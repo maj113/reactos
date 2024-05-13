@@ -3678,13 +3678,13 @@ static unsigned int write_type_tfs(FILE *file, const attr_list_t *attrs,
             if (context != TYPE_CONTEXT_CONTAINER_NO_POINTERS)
                 write_pointer_tfs(file, attrs, type, *typeformat_offset + 4, context, typeformat_offset);
 
-            offset = write_type_tfs(file, indent, attrs, ref, name, ref_context, typeformat_offset);
+            offset = write_type_tfs(file, attrs, ref, name, ref_context, typeformat_offset);
             if (context == TYPE_CONTEXT_CONTAINER_NO_POINTERS)
                 return 0;
             return (context == TYPE_CONTEXT_TOPLEVELPARAM) ? toplevel_offset : offset;
         }
 
-        offset = write_type_tfs( file, indent, attrs, type_pointer_get_ref(type), name,
+        offset = write_type_tfs( file, attrs, type_pointer_get_ref(type), name,
                                  ref_context, typeformat_offset);
         if (context == TYPE_CONTEXT_CONTAINER_NO_POINTERS)
             return 0;
@@ -5064,7 +5064,7 @@ void write_exceptions( FILE *file )
     fprintf( file, "    EXCEPTION_REGISTRATION_RECORD frame; \\\n");
     fprintf( file, "    __filter_func                 filter; \\\n");
     fprintf( file, "    __finally_func                finally; \\\n");
-    fprintf( file, "    sigjmp_buf                    jmp; \\\n");
+    fprintf( file, "    __wine_jmp_buf                jmp; \\\n");
     fprintf( file, "    DWORD                         code; \\\n");
     fprintf( file, "    unsigned char                 abnormal_termination; \\\n");
     fprintf( file, "    unsigned char                 filter_level; \\\n");
@@ -5084,7 +5084,7 @@ void write_exceptions( FILE *file )
     fprintf( file, "        __wine_pop_frame( &exc_frame->frame );\n");
     fprintf( file, "    }\n");
     fprintf( file, "    exc_frame->filter_level = 0;\n");
-    fprintf( file, "    siglongjmp( exc_frame->jmp, 1 );\n");
+    fprintf( file, "    __wine_longjmp( &exc_frame->jmp, 1 );\n");
     fprintf( file, "}\n");
     fprintf( file, "\n");
     fprintf( file, "static DWORD __cdecl __widl_exception_handler( EXCEPTION_RECORD *record,\n");
@@ -5110,7 +5110,7 @@ void write_exceptions( FILE *file )
     fprintf( file, "}\n");
     fprintf( file, "\n");
     fprintf( file, "#define RpcTryExcept \\\n");
-    fprintf( file, "    if (!sigsetjmp( __frame->jmp, 0 )) \\\n");
+    fprintf( file, "    if (!__wine_setjmpex( &__frame->jmp, &__frame->frame )) \\\n");
     fprintf( file, "    { \\\n");
     fprintf( file, "        if (!__frame->finally_level) \\\n" );
     fprintf( file, "            __wine_push_frame( &__frame->frame ); \\\n");
