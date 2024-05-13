@@ -3595,9 +3595,8 @@ static unsigned int write_range_tfs(FILE *file, const attr_list_t *attrs,
     return start_offset;
 }
 
-static unsigned int write_type_tfs(FILE *file, int indent,
-                                   const attr_list_t *attrs, type_t *type,
-                                   const char *name,
+static unsigned int write_type_tfs(FILE *file, const attr_list_t *attrs,
+                                   type_t *type, const char *name,
                                    enum type_context context,
                                    unsigned int *typeformat_offset)
 {
@@ -3701,7 +3700,7 @@ static unsigned int write_type_tfs(FILE *file, int indent,
 static int write_embedded_types(FILE *file, const attr_list_t *attrs, type_t *type,
                                 const char *name, int write_ptr, unsigned int *tfsoff)
 {
-    return write_type_tfs(file, 2, attrs, type, name, write_ptr ? TYPE_CONTEXT_CONTAINER : TYPE_CONTEXT_CONTAINER_NO_POINTERS, tfsoff);
+    return write_type_tfs(file, attrs, type, name, write_ptr ? TYPE_CONTEXT_CONTAINER : TYPE_CONTEXT_CONTAINER_NO_POINTERS, tfsoff);
 }
 
 static void process_tfs_iface(type_t *iface, FILE *file, int indent, unsigned int *offset)
@@ -3728,12 +3727,12 @@ static void process_tfs_iface(type_t *iface, FILE *file, int indent, unsigned in
 
             var = type_function_get_retval(func->type);
             if (!is_void(var->type))
-                var->typestring_offset = write_type_tfs( file, 2, var->attrs, var->type, func->name,
+                var->typestring_offset = write_type_tfs( file, var->attrs, var->type, func->name,
                                                          TYPE_CONTEXT_RETVAL, offset);
 
             if (type_get_function_args(func->type))
                 LIST_FOR_EACH_ENTRY( var, type_get_function_args(func->type), var_t, entry )
-                    var->typestring_offset = write_type_tfs( file, 2, var->attrs, var->type, var->name,
+                    var->typestring_offset = write_type_tfs( file, var->attrs, var->type, var->name,
                                                              TYPE_CONTEXT_TOPLEVELPARAM, offset );
             break;
 
@@ -3745,7 +3744,7 @@ static void process_tfs_iface(type_t *iface, FILE *file, int indent, unsigned in
             {
                 if (is_attr(type_entry->type->attrs, ATTR_ENCODE)
                     || is_attr(type_entry->type->attrs, ATTR_DECODE))
-                    type_entry->type->typestring_offset = write_type_tfs( file, 2,
+                    type_entry->type->typestring_offset = write_type_tfs( file,
                             type_entry->type->attrs, type_entry->type, type_entry->type->name,
                             TYPE_CONTEXT_CONTAINER, offset);
             }
