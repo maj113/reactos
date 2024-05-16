@@ -23,7 +23,7 @@ jobs:
         gcc -march=native -Q --help=target | grep "\-march= " | awk '{print $NF}'
         echo march-sha=$(gcc -march=native -Q --help=target | sha1sum | awk '{print $1}') >> $GITHUB_OUTPUT
         echo git-sha=$(git ls-remote https://github.com/zefklop/RosBE.git | grep unix_amd64 | awk '{print $1}') >> $GITHUB_OUTPUT
-        wget https://gist.githubusercontent.com/zefklop/b2d6a0b470c70183e93d5285a03f5899/raw/build_rosbe_ci.sh
+        wget https://gist.githubusercontent.com/maj113/63d3f5694a6e3fa6ea868ba2ac07fe53/raw/7f1c37aedc58781c2f4f1efbf9f43af5d2521ffb/build_rosbe_ci.sh
     - name: Get RosBE
       id: get_rosbe
       uses: actions/cache@v4
