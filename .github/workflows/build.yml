@@ -23,7 +23,7 @@ jobs:
         gcc -march=native -Q --help=target | grep "\-march= " | awk '{print $NF}'
         echo march-sha=$(gcc -march=native -Q --help=target | sha1sum | awk '{print $1}') >> $GITHUB_OUTPUT
         echo git-sha=$(git ls-remote https://github.com/zefklop/RosBE.git | grep unix_amd64 | awk '{print $1}') >> $GITHUB_OUTPUT
-        wget https://gist.githubusercontent.com/maj113/63d3f5694a6e3fa6ea868ba2ac07fe53/raw/7f1c37aedc58781c2f4f1efbf9f43af5d2521ffb/build_rosbe_ci.sh
+        wget https://gist.githubusercontent.com/maj113/63d3f5694a6e3fa6ea868ba2ac07fe53/raw/3d24a4345179625b645c4768cae30de152e985a2/build_rosbe_ci.sh
     - name: Get RosBE
       id: get_rosbe
       uses: actions/cache@v4
@@ -35,7 +35,6 @@ jobs:
       run: |
         chmod +x build_rosbe_ci.sh
         ./build_rosbe_ci.sh ${{github.workspace}}/RosBE-CI
-        cat /home/runner/work/reactos/reactos/RosBE-git/RosBE-Unix/Base-i386/sources/build.log
     - name: Install ccache
       run: sudo apt install ccache
     - name: Install LLVM
