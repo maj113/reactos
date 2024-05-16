@@ -35,6 +35,7 @@ jobs:
       run: |
         chmod +x build_rosbe_ci.sh
         ./build_rosbe_ci.sh ${{github.workspace}}/RosBE-CI
+        pwd
         cat /home/runner/work/reactos/reactos/RosBE-git/RosBE-Unix/Base-i386/sources/build.log
     - name: Install ccache
       run: sudo apt install ccache
