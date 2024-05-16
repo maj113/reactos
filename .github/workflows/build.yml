@@ -37,9 +37,9 @@ jobs:
         ./build_rosbe_ci.sh ${{github.workspace}}/RosBE-CI
         pwd
         ls -R /home/runner/work/reactos/reactos/RosBE-git/RosBE-Unix/Base-i386/sources
-        ls -R reactos/RosBE-git/RosBE-Unix/Base-i386/sources
+        ls -R RosBE-git/RosBE-Unix/Base-i386/sources
         cat /home/runner/work/reactos/reactos/RosBE-git/RosBE-Unix/Base-i386/sources/build.log
-        cat reactos/RosBE-git/RosBE-Unix/Base-i386/sources/build.log
+        cat RosBE-git/RosBE-Unix/Base-i386/sources/build.log
     - name: Install ccache
       run: sudo apt install ccache
     - name: Install LLVM
