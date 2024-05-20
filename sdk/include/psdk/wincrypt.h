@@ -2339,11 +2339,11 @@ static const WCHAR MS_ENH_RSA_AES_PROV_XP_W[] = { 'M','i','c','r','o','s','o','f
  (CERT_SYSTEM_STORE_LOCAL_MACHINE_ENTERPRISE_ID << CERT_SYSTEM_STORE_LOCATION_SHIFT)
 
 #if defined(__GNUC__)
-#define CERT_LOCAL_MACHINE_SYSTEM_STORE_REGPATH (const WCHAR[])\
+#define CERT_LOCAL_MACHINE_SYSTEM_STORE_REGPATH (static const WCHAR[])\
  {'S','o','f','t','w','a','r','e','\\','M','i','c','r','o','s','o','f','t',\
   '\\','S','y','s','t','e','m','C','e','r','t','i','f','i','c','a','t','e','s',\
   0 }
-#define CERT_GROUP_POLICY_SYSTEM_STORE_REGPATH (const WCHAR[])\
+#define CERT_GROUP_POLICY_SYSTEM_STORE_REGPATH (static const WCHAR[])\
  {'S','o','f','t','w','a','r','e','\\','P','o','l','i','c','i','e','s','\\',\
   'M','i','c','r','o','s','o','f','t','\\','S','y','s','t','e','m','C','e','r',\
   't','i','f','i','c','a','t','e','s',0 }

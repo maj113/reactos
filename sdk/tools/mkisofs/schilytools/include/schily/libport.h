@@ -85,9 +85,6 @@ extern	long		gethostid	__PR((void));
 #ifndef	HAVE_GETPAGESIZE
 extern	int		getpagesize	__PR((void));
 #endif
-#ifndef	HAVE_USLEEP
-extern	int		usleep		__PR((int usec));
-#endif
 
 #ifndef	HAVE_STRCASECMP
 extern	int		strcasecmp	__PR((const char *, const char *));

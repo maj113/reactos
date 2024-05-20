@@ -329,10 +329,12 @@ BOOL HCR_GetIconA(LPCSTR szClass, LPSTR szDest, LPCSTR szName, DWORD len, int* p
 	  RegCloseKey(hkey);
 	}
 
-    if (ret)
+    if (ret){
         TRACE("-- %s %i\n", szDest, *picon_idx);
-    else
+    }
+    else{
         TRACE("-- not found\n");
+    }
 
 	return ret;
 }

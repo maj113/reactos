@@ -1206,7 +1206,7 @@ main(int argc, char *argv[])
         if (fsync(fileno(fp)))
             err(1, "%s: could not synchronise", argv[0]);
 
-        if (ftruncate(fileno(fp), isostat.st_size + padding))
+        if (_chsize_s(fileno(fp), isostat.st_size + padding))
             err(1, "%s: could not add padding bytes", argv[0]);
     }
 

@@ -1433,7 +1433,8 @@
 @ stub -version=0x600+ qsort_s
 @ cdecl raise(long)
 @ cdecl rand()
-@ cdecl -version=0x600+ rand_s(ptr)
+@ cdecl rand_s(ptr)
+@ cdecl _imp__rand_s(ptr) rand_s
 @ cdecl realloc(ptr long)
 @ cdecl remove(str)
 @ cdecl rename(str str)

@@ -27,6 +27,7 @@
 #include <schily/sigblk.h>
 #include <schily/unistd.h>
 #include <schily/stdlib.h>
+#include <unistd.h>
 #include <schily/string.h>
 #include <schily/avoffset.h>
 #include <schily/schily.h>

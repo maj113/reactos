@@ -332,9 +332,9 @@ ProcessDirectory(LPTSTR FileName, DWORD* dwFlags, DWORD dwAttrFlags)
             {
                 if (!(f.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) ||
                         !_tcscmp(f.cFileName, _T(".")) ||
-                        !_tcscmp(f.cFileName, _T("..")))
+                        !_tcscmp(f.cFileName, _T(".."))){
                     continue;
-
+                }
                     _tcscpy(pFilePart, f.cFileName);
                     _tcscat(pFilePart, _T("\\"));
                     _tcscat(pFilePart, pSearchPart);

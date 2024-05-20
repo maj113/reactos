@@ -172,8 +172,15 @@ private:
         m_CurRefHistory(0),
         m_OwningObject(Owner)
     {
-        RtlZeroMemory(m_TagHistory, sizeof(m_TagHistory));
-
+        for (int i = 0; i < TAG_HISTORY_DEPTH; i++)
+        {
+            m_TagHistory[i].RefCount = 0;
+            m_TagHistory[i].File = NULL;
+            m_TagHistory[i].Line = 0;
+            m_TagHistory[i].Tag = 0;
+            m_TagHistory[i].Time = {0};
+            m_TagHistory[i].StackFrames = NULL;
+        }
         //
         // We keep handle reference trackers in a list,
         // which wdfkd uses to identify potential handle leaks.

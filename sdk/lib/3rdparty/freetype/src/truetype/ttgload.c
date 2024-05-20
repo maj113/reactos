@@ -1520,7 +1520,6 @@
     FT_Bool         opened_frame = 0;
 
 #ifdef FT_CONFIG_OPTION_INCREMENTAL
-    FT_StreamRec    inc_stream;
     FT_Data         glyph_data;
     FT_Bool         glyph_data_loaded = 0;
 #endif
@@ -1582,12 +1581,10 @@
       offset            = 0;
       loader->byte_len  = glyph_data.length;
 
-      FT_ZERO( &inc_stream );
-      FT_Stream_OpenMemory( &inc_stream,
+      FT_ZERO( loader->stream );
+      FT_Stream_OpenMemory( loader->stream,
                             glyph_data.pointer,
                             (FT_ULong)glyph_data.length );
-
-      loader->stream = &inc_stream;
     }
     else
 

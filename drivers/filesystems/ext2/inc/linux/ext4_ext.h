@@ -44,7 +44,7 @@ typedef struct ext4_extent_header {
     uint16_t  eh_max;         /* capacity of store in entries */
     uint16_t  eh_depth;       /* has tree real underlying blocks? */
     uint32_t  eh_generation;  /* generation of the tree */
-}__attribute__ ((__packed__)) EXT4_EXTENT_HEADER;
+} EXT4_EXTENT_HEADER;
 
 
 #define EXT4_EXT_MAGIC          0xf30a

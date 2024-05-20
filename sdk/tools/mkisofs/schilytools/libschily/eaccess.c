@@ -1,4 +1,5 @@
 /* @(#)eaccess.c	1.6 14/05/15 Copyright 2004-2014 J. Schilling */
+#include <unistd.h>
 #include <schily/mconfig.h>
 #ifndef lint
 static	UConst char sccsid[] =

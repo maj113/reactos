@@ -1672,7 +1672,7 @@ int globulize(const char **cpp)
 		(void) fflush(stdout);
 		if (globbed) {
 			blkfree(globbed);
-			free((char *)globbed);
+			free((char *)(globbed-4));
 		}
 		return (0);
 	}
@@ -1681,7 +1681,7 @@ int globulize(const char **cpp)
 		/* don't waste too much memory */
 		if (*globbed) {
 			blkfree(globbed);
-			free((char *)globbed);
+			free((char *)(globbed-4));
 		}
 	}
 	return (1);

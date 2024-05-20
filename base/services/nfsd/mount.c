@@ -35,7 +35,7 @@ static int parse_mount(unsigned char *buffer, uint32_t length, nfs41_upcall *upc
     int status;
     mount_upcall_args *args = &upcall->args.mount;
 
-    status = get_name(&buffer, &length, &args->hostname);
+    status = get_name(&buffer, &length, (const char**)&args->hostname);
     if(status) goto out;
     status = get_name(&buffer, &length, &args->path);
     if(status) goto out;

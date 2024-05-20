@@ -16,7 +16,12 @@ struct FxIrpDynamicDispatchInfo : public FxStump {
         CxDeviceInfo(NULL)
     {
         InitializeListHead(&ListEntry);
-        RtlZeroMemory(Dispatch, sizeof(Dispatch));
+        for (int i = 0; i < DynamicDispatchMax; i++)
+        {
+            Dispatch[i].EvtDeviceDynamicDispatch = NULL;
+            Dispatch[i].DriverContext = NULL;
+        }
+
     }
 
     ~FxIrpDynamicDispatchInfo()
