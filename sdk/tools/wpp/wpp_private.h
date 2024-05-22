@@ -28,6 +28,8 @@ void *xmalloc(size_t);
 void *xrealloc(void *, size_t);
 char *xstrdup(const char *str);
 
+void error(const char *s, ...) __attribute__((format (printf, 1, 2), noreturn));
+
 static char *strmake( const char* fmt, ... ) __attribute__ ((__format__ (__printf__, 1, 2)));
 static inline char *strmake( const char* fmt, ... )
 {
@@ -192,12 +194,12 @@ struct pp_status
     FILE *file;         /* current input file descriptor */
     int line_number;    /* current line number */
     int char_number;    /* current char number in line */
-    int pedantic;       /* pedantic option */
     int debug;          /* debug messages flag */
 };
 
 extern struct pp_status pp_status;
 extern include_state_t pp_incl_state;
+extern int pedantic;
 
 /*
  * From ppl.l
