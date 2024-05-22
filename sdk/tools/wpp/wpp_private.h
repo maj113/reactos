@@ -24,6 +24,8 @@
 #include <string.h>
 #include "wine/list.h"
 
+
+#ifdef __REACTOS__ //FIXME: TEMP HACKS
 void *xmalloc(size_t);
 void *xrealloc(void *, size_t);
 char *xstrdup(const char *str);
@@ -50,6 +52,37 @@ static inline char *strmake( const char* fmt, ... )
     }
 }
 
+/* string array functions */
+
+struct strarray
+{
+    unsigned int count;  /* strings in use */
+    unsigned int size;   /* total allocated size */
+    const char **str;
+};
+
+static const struct strarray empty_strarray;
+
+static inline void strarray_add( struct strarray *array, const char *str )
+{
+    if (array->count == array->size)
+    {
+	if (array->size) array->size *= 2;
+        else array->size = 16;
+	array->str = xrealloc( array->str, sizeof(array->str[0]) * array->size );
+    }
+    array->str[array->count++] = str;
+}
+
+
+static inline char *get_dirname( const char *file )
+{
+    const char *end = strrchr( file, '/' );
+    if (!end) return xstrdup( "." );
+    if (end == file) end++;
+    return strmake( "%.*s", (int)(end - file), file );
+}
+#endif // __REACTOS__
 struct pp_entry;	/* forward */
 /*
  * Include logic
