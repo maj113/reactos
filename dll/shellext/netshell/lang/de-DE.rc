@@ -1,4 +1,4 @@
-LANGUAGE LANG_GERMAN, SUBLANG_NEUTRAL
+﻿LANGUAGE LANG_GERMAN, SUBLANG_NEUTRAL
 
 IDD_NETPROPERTIES DIALOGEX 0, 0, 246, 216
 STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
@@ -15,7 +15,7 @@ BEGIN
     PUSHBUTTON "&Eigenschaften", IDC_PROPERTIES, 174, 105, 65, 14
     GROUPBOX "Beschreibung", -1, 9, 128, 230, 46, BS_GROUPBOX
     LTEXT "", IDC_DESCRIPTION, 15, 140, 217, 28, WS_GROUP
-    AUTOCHECKBOX "&Symbol bei Verbindung im Infobereich anzeigen", IDC_SHOWTASKBAR, 9, 181, 230, 12, WS_TABSTOP
+    AUTOCHECKBOX "&Symbol bei Verbindung im Infobereich anzeigen", IDC_SHOWTASKBAR, 9, 181, 230, 12
     AUTOCHECKBOX "&Benachrichtigen bei eingeschränkter oder keiner Konnektivität", IDC_NOTIFYNOCONNECTION, 9, 195, 230, 20, BS_MULTILINE | BS_TOP | WS_TABSTOP
 END
 
@@ -84,7 +84,7 @@ BEGIN
     ICON IDI_NET_SETUP, IDC_STATIC, 21, 10, 20, 20
     LTEXT "Wählen Sie, ob Standard- oder benutzerdefinierte Einstellungen verwendet werden sollen:", IDC_STATIC, 53, 7, 240, 20
     AUTORADIOBUTTON "Standardeinstellungen", IDC_NETWORK_TYPICAL, 53, 27, 253, 18, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "Benutzerdefinierte Einstellungen", IDC_NETWORK_CUSTOM, 53, 72, 253, 18, WS_TABSTOP
+    AUTORADIOBUTTON "Benutzerdefinierte Einstellungen", IDC_NETWORK_CUSTOM, 53, 72, 253, 18
     LTEXT "Erstellt Netzwerkverbindungen unter Verwendung des Clients für ReactOS-Netzwerke, Datei- und Druckerfreigabe für ReactOS-Netzwerke und des TCP/IP-Transportprotokolls mit automatischer Adressierung.", IDC_STATIC, 65, 45, 240, 30
     LTEXT "Ermöglicht die manuelle Konfiguration von Netzwerkkomponenten.", IDC_STATIC, 65, 90, 243, 20
 END
@@ -112,7 +112,7 @@ BEGIN
     LTEXT "Soll dieser Computer einer Domäne oder Arbeitsgruppe hinzugefügt werden?\n\
 (Domänen-Anmeldedaten müssen eventuell vom Netzwerkadministrator bezogen werden.)", IDC_STATIC, 33, 2, 263, 50
     AUTORADIOBUTTON "Diesen Computer folgender Arbeitsgruppe hinzufügen.", IDC_SELECT_WORKGROUP, 33, 32, 253, 20, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "Diesen Computer folgender Domäne hinzufügen.", IDC_SELECT_DOMAIN, 33, 47, 253, 20, WS_TABSTOP
+    AUTORADIOBUTTON "Diesen Computer folgender Domäne hinzufügen.", IDC_SELECT_DOMAIN, 33, 47, 253, 20
     LTEXT "Arbeitsgruppe oder Domäne:", IDC_STATIC, 33, 72, 126, 14
     EDITTEXT IDC_DOMAIN_NAME, 33, 82, 126, 14, WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL
     LTEXT "Sollte dieser Computer nicht mit einem Netzwerk verbunden werden, Sie keine Domänen-Anmeldedaten besitzen oder falls Sie unschlüssig sind, wählen Sie vorläufig Arbeitsgruppe.\nDiese Einstellung kann später jederzeit verändert werden.", IDC_STATIC, 33, 107, 263, 50

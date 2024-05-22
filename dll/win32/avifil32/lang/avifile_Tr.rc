@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Top level resource file for avifil32.dll
  *
  * Copyrights: 2006 Fatih Aşıcı; 2013, 2014 Erdem Ersoy (eersoy93) (erdemersoy [at] erdemersoy [dot] net)
@@ -41,7 +41,7 @@ BEGIN
     COMBOBOX        IDC_STREAM,5,18,154,61,CBS_DROPDOWNLIST | WS_VSCROLL |
                     WS_TABSTOP
     PUSHBUTTON      "&Seçenekler...",IDC_OPTIONS,170,17,50,14
-    AUTOCHECKBOX    "&Aralık bırak",IDC_INTERLEAVE,5,42,85,11,WS_TABSTOP
+    AUTOCHECKBOX    "&Aralık bırak",IDC_INTERLEAVE,5,42,85,11
     EDITTEXT        IDC_INTERLEAVEEVERY,91,41,32,12,ES_AUTOHSCROLL
     LTEXT           "Her karede",-1,129,43,36,9
     LTEXT           "Şimdiki Biçim:",-1,5,56,73,9

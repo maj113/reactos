@@ -1,4 +1,4 @@
-
+﻿
 #include "resource.h"
 
 ICON_16_8_BLACK     ICON "16_8_black.ico"

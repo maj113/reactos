@@ -1,4 +1,4 @@
-// COPYRIGHT: aart3k <aart3k@gmail.com>
+﻿// COPYRIGHT: aart3k <aart3k@gmail.com>
 //            2008-2011 Caemyr - Olaf Siejka
 
 LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
@@ -62,7 +62,7 @@ CAPTION "Ostrzeżenia"
 FONT 8, "MS Shell Dlg"
 BEGIN
     GROUPBOX "Słaba bateria", -1, 6, 7, 239, 99
-    AUTOCHECKBOX "Aktywuj ostrzeżenie, kiedy &poziom mocy sięga:", IDC_ALARM1, 15, 17, 225, 10, WS_TABSTOP //FIXME: accelerator collision &p
+    AUTOCHECKBOX "Aktywuj ostrzeżenie, kiedy &poziom mocy sięga:", IDC_ALARM1, 15, 17, 225, 10 //FIXME: accelerator collision &p
     LTEXT "xxx%", IDC_ALARMVALUE1, 28, 32, 20, 10
     CONTROL "", IDC_ALARMBAR1, "msctls_trackbar32", TBS_HORZ | TBS_AUTOTICKS | WS_TABSTOP, 47, 32, 194, 15
     PUSHBUTTON "Działanie &alarmu...", -1, 148, 50, 88, 14, WS_DISABLED //FIXME: accelerator collision &a
@@ -73,7 +73,7 @@ BEGIN
     LTEXT "Uruchom program:", -1, 28, 91, 89, 10
     LTEXT "?", IDC_ALARMPROG1, 118, 91, 125, 10
     GROUPBOX "Krytycznie słaba bateria", -1, 6, 115, 239, 99
-    AUTOCHECKBOX "Aktywuj ostrzeżenie, kiedy &poziom mocy sięga:", IDC_ALARM2, 15, 125, 225, 10, WS_TABSTOP //FIXME: accelerator collision &p
+    AUTOCHECKBOX "Aktywuj ostrzeżenie, kiedy &poziom mocy sięga:", IDC_ALARM2, 15, 125, 225, 10 //FIXME: accelerator collision &p
     LTEXT "xxx%", IDC_ALARMVALUE2, 28, 140, 20, 10
     CONTROL "", IDC_ALARMBAR2, "msctls_trackbar32", TBS_HORZ | TBS_AUTOTICKS | WS_TABSTOP, 47, 140, 194, 15
     PUSHBUTTON "Działanie &alarmu...", -1, 148, 158, 88, 14, WS_DISABLED //FIXME: accelerator collision &a
@@ -93,9 +93,9 @@ BEGIN
     ICON IDI_ACDC, IDI_ACDC, 7, 7, 0, 0
     LTEXT "Wybierz, których ustawień oszczędzania energii chcesz używać.", -1, 37, 6, 208, 20
     GROUPBOX "Opcje", -1, 6, 30, 240, 65
-    AUTOCHECKBOX "&Zawsze pokazuj ikonę w zasobniku systemowym", IDC_SYSTRAYBATTERYMETER, 17, 43, 220, 10, WS_TABSTOP
-    AUTOCHECKBOX "Zapytaj o &hasło kiedy komputer powraca ze stanu czuwania", IDC_PASSWORDLOGON, 17, 60, 220, 10, WS_TABSTOP
-    AUTOCHECKBOX "&Przyciemniaj ekran, kiedy zasilanie z akumulatora", IDC_VIDEODIMDISPLAY, 17, 78, 220, 10, WS_TABSTOP
+    AUTOCHECKBOX "&Zawsze pokazuj ikonę w zasobniku systemowym", IDC_SYSTRAYBATTERYMETER, 17, 43, 220, 10
+    AUTOCHECKBOX "Zapytaj o &hasło kiedy komputer powraca ze stanu czuwania", IDC_PASSWORDLOGON, 17, 60, 220, 10
+    AUTOCHECKBOX "&Przyciemniaj ekran, kiedy zasilanie z akumulatora", IDC_VIDEODIMDISPLAY, 17, 78, 220, 10
     GROUPBOX "Przyciski zasilania", -1, 6, 101, 240, 110
     LTEXT "&Kiedy zamykam mój komputer przenośny:", IDC_SLIDCLOSE, 15, 115, 222, 10
     COMBOBOX IDC_LIDCLOSE, 15, 127, 220, 90, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
@@ -113,7 +113,7 @@ BEGIN
     ICON IDI_HIBERNATE, IDI_HIBERNATE, 7, 7, 0, 0
     LTEXT "Kiedy Twój komputer przechodzi w stan hibernacji cała zawartość pamięci jest zrzucana na dysk twardy i komputer jest wyłączany. Kiedy komputer budzi się z hibernacji, powraca on do poprzedniego stanu. ", -1, 37, 6, 208, 35
     GROUPBOX "Hibernacja", -1, 6, 41, 240, 32
-    AUTOCHECKBOX "Włącz &hibernację", IDC_HIBERNATEFILE, 17, 55, 210, 10, WS_TABSTOP
+    AUTOCHECKBOX "Włącz &hibernację", IDC_HIBERNATEFILE, 17, 55, 210, 10
     GROUPBOX "Przestrzeń dyskowa dla hibernacji", -1, 6, 80, 240, 76
     LTEXT "Wolna przestrzeń dyskowa:", -1, 15, 95, 150, 10
     LTEXT "?", IDC_FREESPACE, 170, 95, 70, 10

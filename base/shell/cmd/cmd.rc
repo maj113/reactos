@@ -1,4 +1,4 @@
-#include <windef.h>
+﻿#include <windef.h>
 
 #include "resource.h"
 #include "cmdver.h"

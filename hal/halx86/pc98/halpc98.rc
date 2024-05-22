@@ -1,4 +1,4 @@
-#define REACTOS_VERSION_DLL
+﻿#define REACTOS_VERSION_DLL
 #if defined(CONFIG_SMP)
 // #define REACTOS_STR_FILE_DESCRIPTION  "NEC PC-98 series Multiprocessor Hardware Abstraction Layer"
 #else

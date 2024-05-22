@@ -1,4 +1,4 @@
-IDB_REACTOS             BITMAP "res/bitmaps/reactos.bmp"
+﻿IDB_REACTOS             BITMAP "res/bitmaps/reactos.bmp"
 IDB_REACTOS_WORKSTATION BITMAP "res/bitmaps/reactosworkstation.bmp"
 IDB_REACTOS_SERVER      BITMAP "res/bitmaps/reactosserver.bmp"
 IDB_LINEBAR             BITMAP "res/bitmaps/line.bmp"

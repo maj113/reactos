@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PROJECT:    Solitaire
  * LICENSE:    Freeware, permission to use under Public Domain
  * FILE:       base/applications/games/solitaire/lang/zh-CN.rc
@@ -22,9 +22,9 @@ BEGIN
     AUTORADIOBUTTON "标准(&S)", IDC_OPT_STANDARD, 107, 19, 60, 10, WS_GROUP | WS_TABSTOP
     AUTORADIOBUTTON "维加斯(&V)", IDC_OPT_VEGAS, 107, 32, 60, 10
     AUTORADIOBUTTON "无(&N)", IDC_OPT_NOSCORE, 107, 45, 60, 10
-    AUTOCHECKBOX "显示计时(&S)", IDC_OPT_SHOWTIME, 7 ,51 ,65 ,10, WS_TABSTOP
-    AUTOCHECKBOX "状态栏(&T)", IDC_OPT_STATUSBAR, 7, 66, 64, 10, WS_TABSTOP
-    AUTOCHECKBOX "保留得分(&K)", IDC_OPT_KEEPSCORE, 100, 66, 65, 10, WS_TABSTOP
+    AUTOCHECKBOX "显示计时(&S)", IDC_OPT_SHOWTIME, 7 ,51 ,65 ,10
+    AUTOCHECKBOX "状态栏(&T)", IDC_OPT_STATUSBAR, 7, 66, 64, 10
+    AUTOCHECKBOX "保留得分(&K)", IDC_OPT_KEEPSCORE, 100, 66, 65, 10
     DEFPUSHBUTTON "确定", IDOK, 35, 97, 50, 14
     PUSHBUTTON "取消", IDCANCEL, 101, 97, 50, 14
 END

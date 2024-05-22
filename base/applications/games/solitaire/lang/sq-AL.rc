@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PROJECT:     Solitaire
  * LICENSE:     Freeware, permission to use under Public Domain
  * FILE:        base/applications/games/solitaire/lang/sq-AL.rc
@@ -23,9 +23,9 @@ BEGIN
     AUTORADIOBUTTON "&Standard", IDC_OPT_STANDARD, 107, 19, 60, 10, WS_GROUP | WS_TABSTOP
     AUTORADIOBUTTON "&Vegas", IDC_OPT_VEGAS, 107, 32, 60, 10
     AUTORADIOBUTTON "&None", IDC_OPT_NOSCORE, 107, 45, 60, 10
-    AUTOCHECKBOX "&Shfaq Kohen", IDC_OPT_SHOWTIME, 7 ,51 ,65 ,10, WS_TABSTOP
-    AUTOCHECKBOX "T&abela e Statusit", IDC_OPT_STATUSBAR, 7, 66, 64, 10, WS_TABSTOP
-    AUTOCHECKBOX "&Keep Score", IDC_OPT_KEEPSCORE, 100, 66, 65, 10, WS_TABSTOP
+    AUTOCHECKBOX "&Shfaq Kohen", IDC_OPT_SHOWTIME, 7 ,51 ,65 ,10
+    AUTOCHECKBOX "T&abela e Statusit", IDC_OPT_STATUSBAR, 7, 66, 64, 10
+    AUTOCHECKBOX "&Keep Score", IDC_OPT_KEEPSCORE, 100, 66, 65, 10
     DEFPUSHBUTTON "OK", IDOK, 35, 97, 50, 14
     PUSHBUTTON "Anulo", IDCANCEL, 101, 97, 50, 14
 END

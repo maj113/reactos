@@ -1,4 +1,4 @@
-// COPYRIGHT: 2014 Ardit Dani (Ard1t) <ardit.dani@gmail.com>
+﻿// COPYRIGHT: 2014 Ardit Dani (Ard1t) <ardit.dani@gmail.com>
 
 LANGUAGE LANG_ALBANIAN, SUBLANG_NEUTRAL
 
@@ -61,7 +61,7 @@ CAPTION "Alarme"
 FONT 8, "MS Shell Dlg"
 BEGIN
     GROUPBOX "Alarm të ulët bateri", -1, 6, 7, 239, 99
-    AUTOCHECKBOX "Aktivizo alarmin e ulët baterie kur niveli i energjisë arrin:", IDC_ALARM1, 15, 17, 225, 10, WS_TABSTOP
+    AUTOCHECKBOX "Aktivizo alarmin e ulët baterie kur niveli i energjisë arrin:", IDC_ALARM1, 15, 17, 225, 10
     LTEXT "xxx%", IDC_ALARMVALUE1, 28, 32, 20, 10
     CONTROL "", IDC_ALARMBAR1, "msctls_trackbar32", TBS_HORZ | TBS_AUTOTICKS | WS_TABSTOP, 47, 32, 194, 15
     PUSHBUTTON "Veprim Alar&mi...", -1, 148, 50, 88, 14, WS_DISABLED //FIXME: accelerator collision &m
@@ -72,7 +72,7 @@ BEGIN
     LTEXT "Ekzekuto Programin:", -1, 28, 91, 89, 10
     LTEXT "?", IDC_ALARMPROG1, 118, 91, 125, 10
     GROUPBOX "Alarm Kritik baterie", -1, 6, 115, 239, 99
-    AUTOCHECKBOX "Aktivizo alarmin kritik baterie kur niveli i energjisë arrin:", IDC_ALARM2, 15, 125, 225, 10, WS_TABSTOP
+    AUTOCHECKBOX "Aktivizo alarmin kritik baterie kur niveli i energjisë arrin:", IDC_ALARM2, 15, 125, 225, 10
     LTEXT "xxx%", IDC_ALARMVALUE2, 28, 140, 20, 10
     CONTROL "", IDC_ALARMBAR2, "msctls_trackbar32", TBS_HORZ | TBS_AUTOTICKS | WS_TABSTOP, 47, 140, 194, 15
     PUSHBUTTON "Veprim Alar&mi...", -1, 148, 158, 88, 14, WS_DISABLED //FIXME: accelerator collision &m
@@ -92,9 +92,9 @@ BEGIN
     ICON IDI_ACDC, IDI_ACDC, 7, 7, 0, 0
     LTEXT "Zgjidhni cilësimet e ruaj-energjinë që ju doni të përdorni.", -1, 37, 6, 208, 20
     GROUPBOX "Alternativa", -1, 6, 30, 240, 65
-    AUTOCHECKBOX "Gjithmonë shfaq ikonën në taskbar", IDC_SYSTRAYBATTERYMETER, 17, 43, 220, 10, WS_TABSTOP
-    AUTOCHECKBOX "Shfaq për fjalëkalimin kur kompjuteri rifillon nga gatishmëria", IDC_PASSWORDLOGON, 17, 60, 220, 10, WS_TABSTOP
-    AUTOCHECKBOX "&Dim ekranin kur punon në bateri", IDC_VIDEODIMDISPLAY, 17, 78, 220, 10, WS_TABSTOP
+    AUTOCHECKBOX "Gjithmonë shfaq ikonën në taskbar", IDC_SYSTRAYBATTERYMETER, 17, 43, 220, 10
+    AUTOCHECKBOX "Shfaq për fjalëkalimin kur kompjuteri rifillon nga gatishmëria", IDC_PASSWORDLOGON, 17, 60, 220, 10
+    AUTOCHECKBOX "&Dim ekranin kur punon në bateri", IDC_VIDEODIMDISPLAY, 17, 78, 220, 10
     GROUPBOX "Butonat e Energjise", -1, 6, 101, 240, 110
     LTEXT "&Kur e mbyllni kapakun e kompjuterit tim portativ:", IDC_SLIDCLOSE, 15, 115, 222, 10
     COMBOBOX IDC_LIDCLOSE, 15, 127, 220, 90, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
@@ -112,7 +112,7 @@ BEGIN
     ICON IDI_HIBERNATE, IDI_HIBERNATE, 7, 7, 0, 0
     LTEXT "Kur kompjuteri juaj hibernates, ajo ruan çdo gjë që ajo ka në kujtesën e në diskun tuaj të vështirë dhe pastaj mbyllet. Kur kompjuteri juaj vjen nga letargjia, ajo kthehet në gjendjen e mëparshme. ", -1, 37, 6, 208, 35
     GROUPBOX "Hibernate", -1, 6, 41, 240, 32
-    AUTOCHECKBOX "Mundëso &hibernation", IDC_HIBERNATEFILE, 17, 55, 210, 10, WS_TABSTOP
+    AUTOCHECKBOX "Mundëso &hibernation", IDC_HIBERNATEFILE, 17, 55, 210, 10
     GROUPBOX "Hapësirë ​​në disk për letargji", -1, 6, 80, 240, 76
     LTEXT "Hapsira Lirë n'disk:", -1, 15, 95, 150, 10
     LTEXT "?", IDC_FREESPACE, 170, 95, 70, 10

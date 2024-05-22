@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PROJECT:     ReactOS Network Shell
  * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
  * PURPOSE:     Romanian resource file
@@ -24,7 +24,7 @@ BEGIN
     PUSHBUTTON "&Proprietăți…", IDC_PROPERTIES, 174, 105, 65, 14
     GROUPBOX "Descriere", -1, 9, 128, 230, 46, BS_GROUPBOX
     LTEXT "", IDC_DESCRIPTION, 15, 140, 217, 28, WS_GROUP
-    AUTOCHECKBOX "&Afișează pictogramă în zona de notificare", IDC_SHOWTASKBAR, 9, 181, 230, 12, WS_TABSTOP
+    AUTOCHECKBOX "&Afișează pictogramă în zona de notificare", IDC_SHOWTASKBAR, 9, 181, 230, 12
     AUTOCHECKBOX "N&otifică problemele de conectivitate", IDC_NOTIFYNOCONNECTION, 9, 195, 230, 20, BS_MULTILINE | BS_TOP | WS_TABSTOP
 END
 
@@ -93,7 +93,7 @@ BEGIN
     ICON IDI_NET_SETUP, IDC_STATIC, 21, 10, 20, 20
     LTEXT "Alegeți o setare tipică sau una particularizată:", IDC_STATIC, 53, 7, 240, 20
     AUTORADIOBUTTON "Setări tipice", IDC_NETWORK_TYPICAL, 53, 27, 253, 18, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "Setări particularizate", IDC_NETWORK_CUSTOM, 53, 72, 253, 18, WS_TABSTOP
+    AUTORADIOBUTTON "Setări particularizate", IDC_NETWORK_CUSTOM, 53, 72, 253, 18
     LTEXT "Crează conexiuni de rețea utilizând Clientul de rețele ReactOS, Partajarea de fișiere și imprimante pentru rețele ReactOS, și (protocolul) TCP/IP pentru adresare automată.", IDC_STATIC, 65, 45, 240, 30
     LTEXT "Permite configurarea manuală a componentelor de rețea.", IDC_STATIC, 65, 90, 243, 20
 END
@@ -121,7 +121,7 @@ BEGIN
     LTEXT "Doriți ca acest calculator să fie membru al unui domeniu?\n\
 (Puteți afla această informație de la administratorul de rețea.)", IDC_STATIC, 33, 2, 263, 50
     AUTORADIOBUTTON "Nu, acest calculator va fi parte a unui grup de lucru.", IDC_SELECT_WORKGROUP, 33, 32, 253, 20, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "Da, acest calculator va fi parte a unui domeniu.", IDC_SELECT_DOMAIN, 33, 47, 253, 20, WS_TABSTOP
+    AUTORADIOBUTTON "Da, acest calculator va fi parte a unui domeniu.", IDC_SELECT_DOMAIN, 33, 47, 253, 20
     LTEXT "Grup de Lucru sau Nume de Domeniu:", IDC_STATIC, 33, 72, 126, 14
     EDITTEXT IDC_DOMAIN_NAME, 33, 82, 126, 14, WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL
     LTEXT "NOTĂ: Dacă acest calculator nu va fi parte a unei rețele, nu sunt disponibile privelegiile necesare apartenenței la un domeniu, sau nu cunoașteți ce să specificați, lăsați valoarea implicită. Veți putea modifica această opțiune mai târziu.", IDC_STATIC, 33, 107, 263, 50

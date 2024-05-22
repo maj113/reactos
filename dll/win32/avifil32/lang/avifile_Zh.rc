@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Chinese resource file for avifil32.dll
  *
  * Copyright 2002 Michael Günnewig
@@ -44,7 +44,7 @@ BEGIN
     COMBOBOX        IDC_STREAM,5,18,154,61,CBS_DROPDOWNLIST | WS_VSCROLL |
                     WS_TABSTOP
     PUSHBUTTON      "选项(&O)...",IDC_OPTIONS,170,17,50,14
-    AUTOCHECKBOX    "交织(&I)：每",IDC_INTERLEAVE,5,42,85,11,WS_TABSTOP
+    AUTOCHECKBOX    "交织(&I)：每",IDC_INTERLEAVE,5,42,85,11
     EDITTEXT        IDC_INTERLEAVEEVERY,91,41,32,12,ES_AUTOHSCROLL
     LTEXT           "帧数",-1,129,43,36,9
     LTEXT           "当前格式：",-1,5,56,73,9
@@ -76,7 +76,7 @@ BEGIN
     COMBOBOX        IDC_STREAM,5,18,154,61,CBS_DROPDOWNLIST | WS_VSCROLL |
                     WS_TABSTOP
     PUSHBUTTON      "選項(&O)...",IDC_OPTIONS,170,17,50,14
-    AUTOCHECKBOX    "交錯(&I)：每",IDC_INTERLEAVE,5,42,85,11,WS_TABSTOP
+    AUTOCHECKBOX    "交錯(&I)：每",IDC_INTERLEAVE,5,42,85,11
     EDITTEXT        IDC_INTERLEAVEEVERY,91,41,32,12,ES_AUTOHSCROLL
     LTEXT           "影格數",-1,129,43,36,9
     LTEXT           "目前格式：",-1,5,56,73,9

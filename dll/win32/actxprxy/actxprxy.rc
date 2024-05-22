@@ -1,4 +1,4 @@
-1 WINE_REGISTRY "actxprxy_activscp.rgs"
+﻿1 WINE_REGISTRY "actxprxy_activscp.rgs"
 2 WINE_REGISTRY "actxprxy_comcat.rgs"
 3 WINE_REGISTRY "actxprxy_docobj.rgs"
 4 WINE_REGISTRY "actxprxy_hlink.rgs"

@@ -1,4 +1,4 @@
-// COPYRIGHT: Tomoya Kitagawa <jptomoya@yahoo.co.jp>
+﻿// COPYRIGHT: Tomoya Kitagawa <jptomoya@yahoo.co.jp>
 
 LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
 
@@ -61,7 +61,7 @@ CAPTION "アラーム"
 FONT 9, "MS UI Gothic"
 BEGIN
     GROUPBOX "バッテリ低下アラーム", -1, 6, 7, 239, 99
-    AUTOCHECKBOX "電源レベルが次に達したらバッテリ低下アラームで知らせる(&L):", IDC_ALARM1, 15, 17, 225, 10, WS_TABSTOP
+    AUTOCHECKBOX "電源レベルが次に達したらバッテリ低下アラームで知らせる(&L):", IDC_ALARM1, 15, 17, 225, 10
     LTEXT "xxx%", IDC_ALARMVALUE1, 28, 32, 20, 10
     CONTROL "", IDC_ALARMBAR1, "msctls_trackbar32", TBS_HORZ | TBS_AUTOTICKS | WS_TABSTOP, 47, 32, 194, 15
     PUSHBUTTON "アラームの動作(&M)...", -1, 148, 50, 88, 14, WS_DISABLED //FIXME: accelerator collision &m
@@ -72,7 +72,7 @@ BEGIN
     LTEXT "プログラムの実行:", -1, 28, 91, 89, 10
     LTEXT "?", IDC_ALARMPROG1, 118, 91, 125, 10
     GROUPBOX "バッテリ限界アラーム", -1, 6, 115, 239, 99
-    AUTOCHECKBOX "電源レベルが次に達したらバッテリ限界アラームで知らせる(&C):", IDC_ALARM2, 15, 125, 225, 10, WS_TABSTOP
+    AUTOCHECKBOX "電源レベルが次に達したらバッテリ限界アラームで知らせる(&C):", IDC_ALARM2, 15, 125, 225, 10
     LTEXT "xxx%", IDC_ALARMVALUE2, 28, 140, 20, 10
     CONTROL "", IDC_ALARMBAR2, "msctls_trackbar32", TBS_HORZ | TBS_AUTOTICKS | WS_TABSTOP, 47, 140, 194, 15
     PUSHBUTTON "アラームの動作(&M)...", -1, 148, 158, 88, 14, WS_DISABLED //FIXME: accelerator collision &m
@@ -92,9 +92,9 @@ BEGIN
     ICON IDI_ACDC, IDI_ACDC, 7, 7, 0, 0
     LTEXT "使用する省電力設定を選択してください。", -1, 37, 6, 208, 20
     GROUPBOX "オプション", -1, 6, 30, 240, 65
-    AUTOCHECKBOX "アイコンを常にタスク バーに表示する(&S)", IDC_SYSTRAYBATTERYMETER, 17, 43, 220, 10, WS_TABSTOP
-    AUTOCHECKBOX "スタンバイから回復するときにパスワードの入力を求める(&P)", IDC_PASSWORDLOGON, 17, 60, 220, 10, WS_TABSTOP
-    AUTOCHECKBOX "バッテリを使用するときは、薄暗く表示する(&D)", IDC_VIDEODIMDISPLAY, 17, 78, 220, 10, WS_TABSTOP
+    AUTOCHECKBOX "アイコンを常にタスク バーに表示する(&S)", IDC_SYSTRAYBATTERYMETER, 17, 43, 220, 10
+    AUTOCHECKBOX "スタンバイから回復するときにパスワードの入力を求める(&P)", IDC_PASSWORDLOGON, 17, 60, 220, 10
+    AUTOCHECKBOX "バッテリを使用するときは、薄暗く表示する(&D)", IDC_VIDEODIMDISPLAY, 17, 78, 220, 10
     GROUPBOX "電源ボタン", -1, 6, 101, 240, 110
     LTEXT "ポータブル コンピュータを閉じたとき(&W):", IDC_SLIDCLOSE, 15, 115, 222, 10
     COMBOBOX IDC_LIDCLOSE, 15, 127, 220, 90, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
@@ -112,7 +112,7 @@ BEGIN
     ICON IDI_HIBERNATE, IDI_HIBERNATE, 7, 7, 0, 0
     LTEXT "休止状態になると、コンピュータはメモリ上にあるものをすべてハード ディスクに格納してからシャットダウンします。休止状態が解除されると、コンピュータは以前の状態に戻ります。", -1, 37, 6, 208, 35
     GROUPBOX "休止状態", -1, 6, 41, 240, 32
-    AUTOCHECKBOX "休止状態を有効にする(&H)", IDC_HIBERNATEFILE, 17, 55, 210, 10, WS_TABSTOP
+    AUTOCHECKBOX "休止状態を有効にする(&H)", IDC_HIBERNATEFILE, 17, 55, 210, 10
     GROUPBOX "休止のためのディスク領域", -1, 6, 80, 240, 76
     LTEXT "ディスクの空き領域:", -1, 15, 95, 150, 10
     LTEXT "?", IDC_FREESPACE, 170, 95, 70, 10

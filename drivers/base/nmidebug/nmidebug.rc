@@ -1,4 +1,4 @@
-#include <winver.h>
+﻿#include <winver.h>
 #include <ntverp.h>
 
 #define VER_FILETYPE             VFT_DRV

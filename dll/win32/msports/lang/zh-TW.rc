@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PROJECT:     Ports installer library
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Chinese (Traditional) resource file
@@ -36,7 +36,7 @@ BEGIN
     AUTORADIOBUTTON "儘量不使用插斷", IDC_TRY_INTERRUPT, 11, 22, 227, 10, WS_GROUP
     AUTORADIOBUTTON "絕對不使用插斷", IDC_NEVER_INTERRUPT, 11, 44, 227, 10
     AUTORADIOBUTTON "使用指派給此連接埠的任何插斷", IDC_ANY_INTERRUPT, 11, 66, 227, 10
-    AUTOCHECKBOX "啟用舊式隨插即用偵測", IDC_PARALLEL_LEGACY, 6, 90, 237, 10, WS_TABSTOP
+    AUTOCHECKBOX "啟用舊式隨插即用偵測", IDC_PARALLEL_LEGACY, 6, 90, 237, 10
     LTEXT "LPT 連接埠編號：", -1, 6, 107, 140, 10, WS_GROUP
     COMBOBOX IDC_PARALLEL_NAME, 65, 105, 75, 20, CBS_DROPDOWNLIST | WS_GROUP | WS_TABSTOP | WS_VSCROLL
 END

@@ -1,4 +1,4 @@
-LANGUAGE LANG_ITALIAN, SUBLANG_NEUTRAL
+﻿LANGUAGE LANG_ITALIAN, SUBLANG_NEUTRAL
 
 IDD_POWERSCHEMESPAGE_ACDC DIALOGEX 0, 0, 252, 220
 STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
@@ -59,7 +59,7 @@ CAPTION "Allarmi"
 FONT 8, "MS Shell Dlg"
 BEGIN
     GROUPBOX "Allarme di batteria bassa", -1, 6, 7, 239, 99
-    AUTOCHECKBOX "Attiva l'Allarme di batteria bassa quando il livello batteria è:", IDC_ALARM1, 15, 17, 225, 10, WS_TABSTOP
+    AUTOCHECKBOX "Attiva l'Allarme di batteria bassa quando il livello batteria è:", IDC_ALARM1, 15, 17, 225, 10
     LTEXT "xxx%", IDC_ALARMVALUE1, 28, 32, 20, 10
     CONTROL "", IDC_ALARMBAR1, "msctls_trackbar32", TBS_HORZ | TBS_AUTOTICKS | WS_TABSTOP, 47, 32, 194, 15
     PUSHBUTTON "Azione allarmi...", -1, 148, 50, 88, 14, WS_DISABLED
@@ -70,7 +70,7 @@ BEGIN
     LTEXT "Esegui:", -1, 28, 91, 89, 10
     LTEXT "?", IDC_ALARMPROG1, 118, 91, 125, 10
     GROUPBOX "Allarme critico di batteria", -1, 6, 115, 239, 99
-    AUTOCHECKBOX "Attiva l'Allarme di batteria bassa quando il livello batteria è:", IDC_ALARM2, 15, 125, 225, 10, WS_TABSTOP
+    AUTOCHECKBOX "Attiva l'Allarme di batteria bassa quando il livello batteria è:", IDC_ALARM2, 15, 125, 225, 10
     LTEXT "xxx%", IDC_ALARMVALUE2, 28, 140, 20, 10
     CONTROL "", IDC_ALARMBAR2, "msctls_trackbar32", TBS_HORZ | TBS_AUTOTICKS | WS_TABSTOP, 47, 140, 194, 15
     PUSHBUTTON "Azione allarmi...", -1, 148, 158, 88, 14, WS_DISABLED
@@ -90,9 +90,9 @@ BEGIN
     ICON IDI_ACDC, IDI_ACDC, 7, 7, 0, 0
     LTEXT "Scegli le impostazioni di risparmi energia che intendi usare.", -1, 37, 6, 208, 20
     GROUPBOX "Opzioni", -1, 6, 30, 240, 65
-    AUTOCHECKBOX "Mostra sempre l'icona nella barra dei task", IDC_SYSTRAYBATTERYMETER, 17, 43, 220, 10, WS_TABSTOP
-    AUTOCHECKBOX "Chiedi la password al ripristino dallo standby", IDC_PASSWORDLOGON, 17, 60, 220, 10, WS_TABSTOP
-    AUTOCHECKBOX "Attenua il video durante il funzionamento a batteria", IDC_VIDEODIMDISPLAY, 17, 78, 220, 10, WS_TABSTOP
+    AUTOCHECKBOX "Mostra sempre l'icona nella barra dei task", IDC_SYSTRAYBATTERYMETER, 17, 43, 220, 10
+    AUTOCHECKBOX "Chiedi la password al ripristino dallo standby", IDC_PASSWORDLOGON, 17, 60, 220, 10
+    AUTOCHECKBOX "Attenua il video durante il funzionamento a batteria", IDC_VIDEODIMDISPLAY, 17, 78, 220, 10
     GROUPBOX "Pulsanti di gestione", -1, 6, 101, 240, 110
     LTEXT "Quando chiudo lo schermo del computer portatile:", IDC_SLIDCLOSE, 15, 115, 222, 10
     COMBOBOX IDC_LIDCLOSE, 15, 127, 220, 90, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
@@ -110,7 +110,7 @@ BEGIN
     ICON IDI_HIBERNATE, IDI_HIBERNATE, 7, 7, 0, 0
     LTEXT "Quando il computer viene sospeso, il contenuto della RAM viene salvato su disco e poi il sistema si spegne. Alla riaccensione il computer si ripresenta nello stato in cui si trovava.", -1, 37, 6, 208, 35
     GROUPBOX "Sospensione", -1, 6, 41, 240, 32
-    AUTOCHECKBOX "Abilita la Sospensione", IDC_HIBERNATEFILE, 17, 55, 210, 10, WS_TABSTOP
+    AUTOCHECKBOX "Abilita la Sospensione", IDC_HIBERNATEFILE, 17, 55, 210, 10
     GROUPBOX "Spazio su disco per la Sospensione", -1, 6, 80, 240, 76
     LTEXT "Spazio su disco libero:", -1, 15, 95, 150, 10
     LTEXT "?", IDC_FREESPACE, 170, 95, 70, 10

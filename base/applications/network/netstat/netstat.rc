@@ -1,4 +1,4 @@
-#include <windef.h>
+﻿#include <windef.h>
 #include <winuser.h>
 #include "resource.h"
 

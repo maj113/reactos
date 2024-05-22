@@ -1,4 +1,4 @@
-/*
+﻿/*
  * cryptui dll resources
  *
  * Copyright 2008 Juan Lang
@@ -367,7 +367,7 @@ BEGIN
   GROUPBOX "Aryeja Çertifikimit", -1, 7,7,234,141, BS_GROUPBOX
   LTEXT "Zgjidh nje ose me shume arsye te listimit kur behet perzgjedhja e Aryest te perparuar.",
     -1, 14,18,220,16
-  LTEXT "Aryeja Çertifikimit:", -1, 14,41,90,12, WS_TABSTOP
+  LTEXT "Aryeja Çertifikimit:", -1, 14,41,90,12
   CONTROL "", IDC_CERTIFICATE_USAGES,"SysListView32",
     LVS_REPORT|LVS_NOCOLUMNHEADER|LVS_SINGLESEL|WS_CHILD|WS_VISIBLE|WS_TABSTOP|WS_BORDER,
     14,51,220,90

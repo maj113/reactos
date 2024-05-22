@@ -1,4 +1,4 @@
-// COPYRIGHT: 2014-2016 Erdem Ersoy, 2018 Ercan Ersoy (ercanersoy) <ercanersoy@ercanersoy.net>
+﻿// COPYRIGHT: 2014-2016 Erdem Ersoy, 2018 Ercan Ersoy (ercanersoy) <ercanersoy@ercanersoy.net>
 
 LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
 
@@ -17,7 +17,7 @@ BEGIN
     PUSHBUTTON "&Özellikler", IDC_PROPERTIES, 174, 105, 65, 14
     GROUPBOX "Tanım", -1, 9, 128, 230, 46, BS_GROUPBOX
     LTEXT "", IDC_DESCRIPTION, 15, 140, 217, 28, WS_GROUP
-    AUTOCHECKBOX "&Bağlandığında görev çubuğunda simge göster", IDC_SHOWTASKBAR, 9, 181, 230, 12, WS_TABSTOP
+    AUTOCHECKBOX "&Bağlandığında görev çubuğunda simge göster", IDC_SHOWTASKBAR, 9, 181, 230, 12
     AUTOCHECKBOX "B&u bağlantı kısıtlıysa veya bağlanamıyorsa beni uyar", IDC_NOTIFYNOCONNECTION, 9, 195, 230, 20, BS_MULTILINE | BS_TOP | WS_TABSTOP
 END
 
@@ -86,7 +86,7 @@ BEGIN
     ICON IDI_NET_SETUP, IDC_STATIC, 21, 10, 20, 20
     LTEXT "Normal ya da özelleştirilmiş ayarlar kullanıp kullanmayacağınızı seçiniz:", IDC_STATIC, 53, 7, 240, 20
     AUTORADIOBUTTON "Normal Ayarlar", IDC_NETWORK_TYPICAL, 53, 27, 253, 18, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "Özelleştirilmiş Ayarlar", IDC_NETWORK_CUSTOM, 53, 72, 253, 18, WS_TABSTOP
+    AUTORADIOBUTTON "Özelleştirilmiş Ayarlar", IDC_NETWORK_CUSTOM, 53, 72, 253, 18
     LTEXT "ReactOS Ağları için İstemci'yi, Dosya ve Yazdırma Paylaşımı'nı ve otomatik adreslemeli TCP/IP protokolünü kullanarak ağ bağlantıları oluşturur.", IDC_STATIC, 65, 45, 240, 30
     LTEXT "Ağ bileşenlerini elle yapılandırmanıza olanak sağlar.", IDC_STATIC, 65, 90, 243, 20
 END
@@ -114,7 +114,7 @@ BEGIN
     LTEXT "Bu bilgisayarın bir etki alanının bir üyesi olmasını ister misiniz?\n\
 (Ağ yöneticinizden bu bilgiyi edinebilirsiniz.)", IDC_STATIC, 33, 2, 263, 50
     AUTORADIOBUTTON "Hayır, bu bilgisayar bir çalışma grubunun parçası olacak.", IDC_SELECT_WORKGROUP, 33, 32, 253, 20, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "Evet, bu bilgisayar bir etki alanının parçası olacak.", IDC_SELECT_DOMAIN, 33, 47, 253, 20, WS_TABSTOP
+    AUTORADIOBUTTON "Evet, bu bilgisayar bir etki alanının parçası olacak.", IDC_SELECT_DOMAIN, 33, 47, 253, 20
     LTEXT "Çalışma Takımı ya da Etki Alanı Adı:", IDC_STATIC, 33, 72, 126, 14
     EDITTEXT IDC_DOMAIN_NAME, 33, 82, 126, 14, WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL
     LTEXT "ÖNEMLİ: Bu bilgisayar bir ağın parçası olmayacaksa bir etki alanına katılmak için yeterli haklarınız olmaz, ya da ne gireceğinizi bilmiyorsanız yalnızca şu an için çalışma grubunu seçiniz. Bu seçenekler ileriki bir zamanda değiştirilebilir.", IDC_STATIC, 33, 107, 263, 50

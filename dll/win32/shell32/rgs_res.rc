@@ -1,4 +1,4 @@
-/* REGISTRY */
+﻿/* REGISTRY */
 
 IDR_ADMINFOLDERSHORTCUT REGISTRY "res/rgs/adminfoldershortcut.rgs"
 IDR_CONTROLPANEL REGISTRY "res/rgs/controlpanel.rgs"

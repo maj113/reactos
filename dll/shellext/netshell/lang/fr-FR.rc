@@ -1,4 +1,4 @@
-LANGUAGE LANG_FRENCH, SUBLANG_NEUTRAL
+﻿LANGUAGE LANG_FRENCH, SUBLANG_NEUTRAL
 
 IDD_NETPROPERTIES DIALOGEX 0, 0, 246, 216
 STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
@@ -15,7 +15,7 @@ BEGIN
     PUSHBUTTON "&Propriétés", IDC_PROPERTIES, 174, 105, 65, 14
     GROUPBOX "Description", -1, 9, 128, 230, 46, BS_GROUPBOX
     LTEXT "", IDC_DESCRIPTION, 15, 140, 217, 28, WS_GROUP
-    AUTOCHECKBOX "&Afficher l'icône dans la barre des tâches", IDC_SHOWTASKBAR, 9, 181, 230, 12, WS_TABSTOP
+    AUTOCHECKBOX "&Afficher l'icône dans la barre des tâches", IDC_SHOWTASKBAR, 9, 181, 230, 12
     AUTOCHECKBOX "Me &notifier quand cette connexion n'a pas de connectivité ou une limitée", IDC_NOTIFYNOCONNECTION, 9, 195, 230, 20, BS_MULTILINE | BS_TOP | WS_TABSTOP
 END
 
@@ -84,7 +84,7 @@ BEGIN
     ICON IDI_NET_SETUP, IDC_STATIC, 21, 10, 20, 20
     LTEXT "Faut-il utiliser des paramètres par défaut ou des spécifiques :", IDC_STATIC, 53, 7, 240, 20
     AUTORADIOBUTTON "Paramètres par défaut", IDC_NETWORK_TYPICAL, 53, 27, 253, 18, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "Paramètres spécifiques", IDC_NETWORK_CUSTOM, 53, 72, 253, 18, WS_TABSTOP
+    AUTORADIOBUTTON "Paramètres spécifiques", IDC_NETWORK_CUSTOM, 53, 72, 253, 18
     LTEXT "Crée les connexions réseau en utilisant le client pour les réseaux ReactOS, le partage des fichiers et des imprimantes pour les réseaux ReactOS, et le protocole de transport TCP/IP avec adressage automatique.", IDC_STATIC, 65, 45, 240, 30
     LTEXT "Cela vous autorise à configurer manuellement les composants réseau.", IDC_STATIC, 65, 90, 243, 20
 END
@@ -112,7 +112,7 @@ BEGIN
     LTEXT "Voulez-vous que cet ordinateur soit membre d'un domaine ?\n\
 (Vous pouvez obtenir cette information de votre administrateur réseau).", IDC_STATIC, 33, 2, 263, 50
     AUTORADIOBUTTON "Non, cet ordinateur fera partie d'un groupe de travail.", IDC_SELECT_WORKGROUP, 33, 32, 253, 20, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "Oui, cet ordinateur fera partie d'un domaine.", IDC_SELECT_DOMAIN, 33, 47, 253, 20, WS_TABSTOP
+    AUTORADIOBUTTON "Oui, cet ordinateur fera partie d'un domaine.", IDC_SELECT_DOMAIN, 33, 47, 253, 20
     LTEXT "Nom du groupe de travail ou du domaine :", IDC_STATIC, 33, 72, 150, 14
     EDITTEXT IDC_DOMAIN_NAME, 33, 82, 126, 14, WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL
     LTEXT "NOTE : Si cet ordinateur ne fera pas partie d'un réseau, si vous n'avez pas assez de droits pour rejoindre un réseau, ou si vous ne savez pas quoi entrer, choisissez groupe de travail pour l'instant. Ces options peuvent être changées ultérieurement.", IDC_STATIC, 33, 107, 263, 50

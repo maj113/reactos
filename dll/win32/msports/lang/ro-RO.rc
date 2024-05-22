@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PROJECT:     Ports installer library
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Romanian resource file
@@ -36,7 +36,7 @@ BEGIN
     AUTORADIOBUTTON "Se în&cearcă să nu se utilizeze o întrerupere", IDC_TRY_INTERRUPT, 11, 22, 227, 10, WS_GROUP
     AUTORADIOBUTTON "&Nu se utilizează niciodată întreruperi", IDC_NEVER_INTERRUPT, 11, 44, 227, 10
     AUTORADIOBUTTON "Se &utilizează orice întrerupere asociată portului", IDC_ANY_INTERRUPT, 11, 66, 227, 10
-    AUTOCHECKBOX "Acti&vare detectare dispozitive Plug and Play moştenite", IDC_PARALLEL_LEGACY, 6, 90, 237, 10, WS_TABSTOP
+    AUTOCHECKBOX "Acti&vare detectare dispozitive Plug and Play moştenite", IDC_PARALLEL_LEGACY, 6, 90, 237, 10
     LTEXT "Număr port L&PT:", -1, 6, 107, 140, 10, WS_GROUP
     COMBOBOX IDC_PARALLEL_NAME, 65, 105, 75, 20, CBS_DROPDOWNLIST | WS_GROUP | WS_TABSTOP | WS_VSCROLL
 END

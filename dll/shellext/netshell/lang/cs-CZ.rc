@@ -1,4 +1,4 @@
-LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+﻿LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
 
 IDD_NETPROPERTIES DIALOGEX 0, 0, 246, 216
 STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
@@ -15,7 +15,7 @@ BEGIN
     PUSHBUTTON "&Vlastnosti", IDC_PROPERTIES, 174, 105, 65, 14
     GROUPBOX "Popis", -1, 9, 128, 230, 46, BS_GROUPBOX
     LTEXT "", IDC_DESCRIPTION, 15, 140, 217, 28, WS_GROUP
-    AUTOCHECKBOX "Po připojení zobrazit ikonu na hlavním panelu", IDC_SHOWTASKBAR, 9, 181, 230, 12, WS_TABSTOP
+    AUTOCHECKBOX "Po připojení zobrazit ikonu na hlavním panelu", IDC_SHOWTASKBAR, 9, 181, 230, 12
     AUTOCHECKBOX "&Upozornit při omezeném nebo žádném připojení", IDC_NOTIFYNOCONNECTION, 9, 195, 230, 20, WS_TABSTOP | BS_TOP | BS_MULTILINE
 END
 
@@ -84,7 +84,7 @@ BEGIN
     ICON IDI_NET_SETUP, IDC_STATIC, 21, 10, 20, 20
     LTEXT "Zvolte, zda chcete použít typická nastavení nebo si je přizpůsobit:", IDC_STATIC, 53, 7, 240, 20
     AUTORADIOBUTTON "Typická nastavení", IDC_NETWORK_TYPICAL, 53, 27, 253, 18, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "Přizpůsobit", IDC_NETWORK_CUSTOM, 53, 72, 253, 18, WS_TABSTOP
+    AUTORADIOBUTTON "Přizpůsobit", IDC_NETWORK_CUSTOM, 53, 72, 253, 18
     LTEXT "Vytvoří připojení k síti pomocí Síťového klienta ReactOS, sdílení souborů a tiskáren a nastaví automatickou adresu protokolu TCP/IP.", IDC_STATIC, 65, 45, 240, 30
     LTEXT "Umožní ruční nastavení sítě.", IDC_STATIC, 65, 90, 243, 20
 END
@@ -112,7 +112,7 @@ BEGIN
     LTEXT "Má být tento počítač součástí domény?\n\
 (Tuto informaci můžete obdržet od Vašeho správce sítě.)", IDC_STATIC, 33, 2, 263, 50
     AUTORADIOBUTTON "Ne, tento počítáč bude součástí pracovní skupiny.", IDC_SELECT_WORKGROUP, 33, 32, 253, 20, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "Ano, tento počítáč bude součástí domény.", IDC_SELECT_DOMAIN, 33, 47, 253, 20, WS_TABSTOP
+    AUTORADIOBUTTON "Ano, tento počítáč bude součástí domény.", IDC_SELECT_DOMAIN, 33, 47, 253, 20
     LTEXT "Název skupiny nebo domény:", IDC_STATIC, 33, 72, 126, 14
     EDITTEXT IDC_DOMAIN_NAME, 33, 82, 126, 14, WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL
     LTEXT "Poznámka: Pokud tento počítač nebude součástí sítě, nemáte dostatečná oprávnění pro připojení k doméně, nebo nevíte, jakou možnost zvolit, vyberte zatím možnost síťová skupina. Tato nastavení mohou být později změněna.", IDC_STATIC, 33, 107, 263, 50

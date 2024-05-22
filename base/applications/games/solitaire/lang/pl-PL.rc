@@ -1,4 +1,4 @@
-/*
+﻿/*
  *    Translated by TestamenT & xrogers
  *    testament@users.sourceforge.net
  *    https://sourceforge.net/projects/reactospl
@@ -25,9 +25,9 @@ BEGIN
     AUTORADIOBUTTON "&Standardowe", IDC_OPT_STANDARD, 107, 19, 60, 10, WS_GROUP | WS_TABSTOP
     AUTORADIOBUTTON "&Vegas", IDC_OPT_VEGAS, 107, 32, 60, 10
 	 AUTORADIOBUTTON "&Brak", IDC_OPT_NOSCORE, 107, 45, 60, 10
-    AUTOCHECKBOX "&Pokazuj czas gry", IDC_OPT_SHOWTIME, 7 ,51 ,65 ,10, WS_TABSTOP
-    AUTOCHECKBOX "Pokazuj pa&sek stanu", IDC_OPT_STATUSBAR, 7, 66, 77, 10, WS_TABSTOP
-    AUTOCHECKBOX "Pamiętaj punkty", IDC_OPT_KEEPSCORE, 100, 66, 65, 10, WS_TABSTOP
+    AUTOCHECKBOX "&Pokazuj czas gry", IDC_OPT_SHOWTIME, 7 ,51 ,65 ,10
+    AUTOCHECKBOX "Pokazuj pa&sek stanu", IDC_OPT_STATUSBAR, 7, 66, 77, 10
+    AUTOCHECKBOX "Pamiętaj punkty", IDC_OPT_KEEPSCORE, 100, 66, 65, 10
     DEFPUSHBUTTON "OK", IDOK, 35, 97, 50, 14
     PUSHBUTTON "Anuluj", IDCANCEL, 101, 97, 50, 14
 END

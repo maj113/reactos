@@ -1,4 +1,4 @@
-#define REACTOS_VERSION_DLL
+﻿#define REACTOS_VERSION_DLL
 #define REACTOS_STR_FILE_DESCRIPTION	"FreeType font handling library\0"
 #define REACTOS_STR_INTERNAL_NAME	"freetype\0"
 #define REACTOS_STR_ORIGINAL_FILENAME	"freetype.dll\0"

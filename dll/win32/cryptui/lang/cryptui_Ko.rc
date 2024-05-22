@@ -1,4 +1,4 @@
-/*
+﻿/*
  * cryptui dll resources
  *
  * Copyright 2008 Juan Lang
@@ -366,7 +366,7 @@ BEGIN
   GROUPBOX "인증서 용도", -1, 7,7,234,141, BS_GROUPBOX
   LTEXT "추가 용도가 선택되었을 때 나타나는 하나나 다수의 용도 선택.",
     -1, 14,18,220,16
-  LTEXT "인증서 용도(&C):", -1, 14,41,90,12, WS_TABSTOP
+  LTEXT "인증서 용도(&C):", -1, 14,41,90,12
   CONTROL "", IDC_CERTIFICATE_USAGES,"SysListView32",
     LVS_REPORT|LVS_NOCOLUMNHEADER|LVS_SINGLESEL|WS_CHILD|WS_VISIBLE|WS_TABSTOP|WS_BORDER,
     14,51,220,90

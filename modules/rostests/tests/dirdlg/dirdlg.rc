@@ -1,4 +1,4 @@
-#include <windows.h>
+﻿#include <windows.h>
 #include "resource.h"
 
 IDD_MAIN DIALOG 20, 20, 220, 140

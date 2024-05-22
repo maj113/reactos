@@ -1,4 +1,4 @@
-
+﻿
 #include "wspool.h"
 
 #define REACTOS_VERSION_DLL

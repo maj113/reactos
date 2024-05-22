@@ -1,4 +1,4 @@
-#include "uniata_ver.h"
+﻿#include "uniata_ver.h"
 
 #define VERSION                         UNIATA_VER_DOT_COMMA
 #define VERSION_STR                     "0." UNIATA_VER_STR

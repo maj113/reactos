@@ -1,4 +1,4 @@
-/*
+﻿/*
  * cryptui dll resources
  *
  * Copyright 2008 Juan Lang
@@ -366,7 +366,7 @@ BEGIN
   GROUPBOX "Soggetto del certificato", -1, 7,7,234,141, BS_GROUPBOX
   LTEXT "Seleziona uno o più soggetti da elencare quando Soggetti Avanzati è selezionato.",
     -1, 14,18,220,16
-  LTEXT "&Soggetti del certificato:", -1, 14,41,90,12, WS_TABSTOP
+  LTEXT "&Soggetti del certificato:", -1, 14,41,90,12
   CONTROL "", IDC_CERTIFICATE_USAGES,"SysListView32",
     LVS_REPORT|LVS_NOCOLUMNHEADER|LVS_SINGLESEL|WS_CHILD|WS_VISIBLE|WS_TABSTOP|WS_BORDER,
     14,51,220,90

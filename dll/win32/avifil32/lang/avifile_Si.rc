@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Top level resource file for avifil32.dll
  *
  * Copyright 2002 Michael Günnewig
@@ -41,7 +41,7 @@ BEGIN
     COMBOBOX        IDC_STREAM,5,18,154,61,CBS_DROPDOWNLIST | WS_VSCROLL |
                     WS_TABSTOP
     PUSHBUTTON      "M&ožnosti ...",IDC_OPTIONS,170,17,50,14
-    AUTOCHECKBOX    "&Prepletanje vsake",IDC_INTERLEAVE,5,42,85,11,WS_TABSTOP
+    AUTOCHECKBOX    "&Prepletanje vsake",IDC_INTERLEAVE,5,42,85,11
     EDITTEXT        IDC_INTERLEAVEEVERY,91,41,32,12,ES_AUTOHSCROLL
     LTEXT           "slike",-1,129,43,36,9
     LTEXT           "Trenutna oblika zapisa:",-1,5,56,73,9

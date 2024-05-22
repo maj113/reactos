@@ -1,4 +1,4 @@
-/* TRANSLATOR : Ardit Dani (Ard1t) (ardit.dani@gmail.com)
+﻿/* TRANSLATOR : Ardit Dani (Ard1t) (ardit.dani@gmail.com)
  * DATE OF TRANSLATION:  23-01-2014
 */
 
@@ -32,7 +32,7 @@ BEGIN
     AUTORADIOBUTTON "Try not to use an interrupt", IDC_TRY_INTERRUPT, 11, 22, 227, 10, WS_GROUP
     AUTORADIOBUTTON "Never use an interrupt", IDC_NEVER_INTERRUPT, 11, 44, 227, 10
     AUTORADIOBUTTON "Use any interrupt assigned to the port", IDC_ANY_INTERRUPT, 11, 66, 227, 10
-    AUTOCHECKBOX "Enable legacy Plug and Play detection", IDC_PARALLEL_LEGACY, 6, 90, 237, 10, WS_TABSTOP
+    AUTOCHECKBOX "Enable legacy Plug and Play detection", IDC_PARALLEL_LEGACY, 6, 90, 237, 10
     LTEXT "LPT Port Number:", -1, 6, 107, 140, 10, WS_GROUP
     COMBOBOX IDC_PARALLEL_NAME, 65, 105, 75, 20, CBS_DROPDOWNLIST | WS_GROUP | WS_TABSTOP | WS_VSCROLL
 END

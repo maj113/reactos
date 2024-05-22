@@ -1,4 +1,4 @@
-LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+﻿LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
 
 IDD_POWERSCHEMESPAGE_ACDC DIALOGEX 0, 0, 252, 220
 STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
@@ -59,7 +59,7 @@ CAPTION "Varování"
 FONT 8, "MS Shell Dlg"
 BEGIN
     GROUPBOX "Varování o nízkém stavu baterie", -1, 6, 7, 239, 99
-    AUTOCHECKBOX "Alarm nízká baterie na dosažení úro&vně:", IDC_ALARM1, 15, 17, 225, 10, WS_TABSTOP
+    AUTOCHECKBOX "Alarm nízká baterie na dosažení úro&vně:", IDC_ALARM1, 15, 17, 225, 10
     LTEXT "xxx%", IDC_ALARMVALUE1, 28, 32, 20, 10
     CONTROL "", IDC_ALARMBAR1, "msctls_trackbar32", TBS_HORZ | TBS_AUTOTICKS | WS_TABSTOP, 47, 32, 194, 15
     PUSHBUTTON "&Akce při varování...", -1, 148, 50, 88, 14, WS_DISABLED
@@ -70,7 +70,7 @@ BEGIN
     LTEXT "Spustit program:", -1, 28, 91, 89, 10
     LTEXT "?", IDC_ALARMPROG1, 118, 91, 125, 10
     GROUPBOX "Varování o kritickém stavu baterie", -1, 6, 115, 239, 99
-    AUTOCHECKBOX "Alarm &kritické baterie při dosažení úrovně nabití:", IDC_ALARM2, 15, 125, 225, 10, WS_TABSTOP
+    AUTOCHECKBOX "Alarm &kritické baterie při dosažení úrovně nabití:", IDC_ALARM2, 15, 125, 225, 10
     LTEXT "xxx%", IDC_ALARMVALUE2, 28, 140, 20, 10
     CONTROL "", IDC_ALARMBAR2, "msctls_trackbar32", TBS_HORZ | TBS_AUTOTICKS | WS_TABSTOP, 47, 140, 194, 15
     PUSHBUTTON "Akce &při varování...", -1, 148, 158, 88, 14, WS_DISABLED
@@ -90,9 +90,9 @@ BEGIN
     ICON IDI_ACDC, IDI_ACDC, 7, 7, 0, 0
     LTEXT "Vyberte, které nastavení snížené spotřeby chcete použít.", -1, 37, 6, 208, 20
     GROUPBOX "Možnosti", -1, 6, 30, 240, 65
-    AUTOCHECKBOX "Vždy zobrazovat &ikonu na hlavním panelu", IDC_SYSTRAYBATTERYMETER, 17, 43, 220, 10, WS_TABSTOP
-    AUTOCHECKBOX "Dotázat se na &heslo při přechodu z úsporného režimu", IDC_PASSWORDLOGON, 17, 60, 220, 10, WS_TABSTOP
-    AUTOCHECKBOX "&Snížit jas displeje při chodu na baterie", IDC_VIDEODIMDISPLAY, 17, 78, 220, 10, WS_TABSTOP
+    AUTOCHECKBOX "Vždy zobrazovat &ikonu na hlavním panelu", IDC_SYSTRAYBATTERYMETER, 17, 43, 220, 10
+    AUTOCHECKBOX "Dotázat se na &heslo při přechodu z úsporného režimu", IDC_PASSWORDLOGON, 17, 60, 220, 10
+    AUTOCHECKBOX "&Snížit jas displeje při chodu na baterie", IDC_VIDEODIMDISPLAY, 17, 78, 220, 10
     GROUPBOX "Tlačítka napájení", -1, 6, 101, 240, 110
     LTEXT "&Při sklopení displeje přenosného počítače:", IDC_SLIDCLOSE, 15, 115, 222, 10
     COMBOBOX IDC_LIDCLOSE, 15, 127, 220, 90, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
@@ -110,7 +110,7 @@ BEGIN
     ICON IDI_HIBERNATE, IDI_HIBERNATE, 7, 7, 0, 0
     LTEXT "Pokud Váš počítač přejde do režimu spánku, uloží obsah své paměti na pevný disk a vypne se. Po opětovném spuštění se vrátí do původního stavu.", -1, 37, 6, 208, 35
     GROUPBOX "Režim spánku", -1, 6, 41, 240, 32
-    AUTOCHECKBOX "Zapnout funkci režim &spánku", IDC_HIBERNATEFILE, 17, 55, 210, 10, WS_TABSTOP
+    AUTOCHECKBOX "Zapnout funkci režim &spánku", IDC_HIBERNATEFILE, 17, 55, 210, 10
     GROUPBOX "Místo na disku potřebné pro režim spánku", -1, 6, 80, 240, 76
     LTEXT "Volné místo:", -1, 15, 95, 150, 10
     LTEXT "?", IDC_FREESPACE, 170, 95, 70, 10

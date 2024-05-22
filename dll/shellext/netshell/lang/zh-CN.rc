@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PROJECT:    ReactOS Netshell
  * LICENSE:    GPL - See COPYING in the top level directory
  * PURPOSE:    Chinese (Simplified) Language File
@@ -23,7 +23,7 @@ BEGIN
     PUSHBUTTON "属性(&P)", IDC_PROPERTIES, 174, 105, 65, 14
     GROUPBOX "描述", -1, 9, 128, 230, 46, BS_GROUPBOX
     LTEXT "", IDC_DESCRIPTION, 15, 140, 217, 28, WS_GROUP
-    AUTOCHECKBOX "连接后在通知区域显示图标(&S)", IDC_SHOWTASKBAR, 9, 181, 230, 12, WS_TABSTOP
+    AUTOCHECKBOX "连接后在通知区域显示图标(&S)", IDC_SHOWTASKBAR, 9, 181, 230, 12
     AUTOCHECKBOX "通知我当此连接受限制或无连接(&N)", IDC_NOTIFYNOCONNECTION, 9, 195, 230, 20, BS_MULTILINE | BS_TOP | WS_TABSTOP
 END
 
@@ -92,7 +92,7 @@ BEGIN
     ICON IDI_NET_SETUP, IDC_STATIC, 21, 10, 20, 20
     LTEXT "请选择使用典型设置还是自定义设置：", IDC_STATIC, 53, 7, 240, 20
     AUTORADIOBUTTON "典型设置", IDC_NETWORK_TYPICAL, 53, 27, 253, 18, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "自定义设置", IDC_NETWORK_CUSTOM, 53, 72, 253, 18, WS_TABSTOP
+    AUTORADIOBUTTON "自定义设置", IDC_NETWORK_CUSTOM, 53, 72, 253, 18
     LTEXT "使用 ReactOS 网络客户端，ReactOS 网络的文件和打印共享以及具有自动寻址功能的 TCP/IP 传输协议创建网络连接。", IDC_STATIC, 65, 45, 240, 30
     LTEXT "允许您手动配置网络组件。", IDC_STATIC, 65, 90, 243, 20
 END
@@ -120,7 +120,7 @@ BEGIN
     LTEXT "您是否希望此计算机成为域的成员？\n\
 （您可以从网络管理员处获取此信息。）", IDC_STATIC, 33, 2, 263, 50
     AUTORADIOBUTTON "不，这台计算机将成为工作组的一部分。", IDC_SELECT_WORKGROUP, 33, 32, 253, 20, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "是的，这台计算机将成为域的一部分。", IDC_SELECT_DOMAIN, 33, 47, 253, 20, WS_TABSTOP
+    AUTORADIOBUTTON "是的，这台计算机将成为域的一部分。", IDC_SELECT_DOMAIN, 33, 47, 253, 20
     LTEXT "工作组或域名称：", IDC_STATIC, 33, 72, 126, 14
     EDITTEXT IDC_DOMAIN_NAME, 33, 82, 126, 14, WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL
     LTEXT "注意：如果此计算机不是网络的一部分，您没有足够的权限加入域，或者您不知道要输入什么，那么现在就选择工作组。这些选项可以在以后更改。", IDC_STATIC, 33, 107, 263, 50
