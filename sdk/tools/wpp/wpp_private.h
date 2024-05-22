@@ -24,6 +24,30 @@
 #include <string.h>
 #include "wine/list.h"
 
+void *xmalloc(size_t);
+void *xrealloc(void *, size_t);
+char *xstrdup(const char *str);
+
+static char *strmake( const char* fmt, ... ) __attribute__ ((__format__ (__printf__, 1, 2)));
+static inline char *strmake( const char* fmt, ... )
+{
+    int n;
+    size_t size = 100;
+    va_list ap;
+
+    for (;;)
+    {
+        char *p = xmalloc( size );
+        va_start( ap, fmt );
+	n = vsnprintf( p, size, fmt, ap );
+	va_end( ap );
+        if (n == -1) size *= 2;
+        else if ((size_t)n >= size) size = n + 1;
+        else return p;
+        free( p );
+    }
+}
+
 struct pp_entry;	/* forward */
 /*
  * Include logic
@@ -159,7 +183,6 @@ int pp_get_if_depth(void);
 
 int ppy_error(const char *s, ...) __attribute__((format (printf, 1, 2)));
 int ppy_warning(const char *s, ...) __attribute__((format (printf, 1, 2)));
-void pp_internal_error(const char *file, int line, const char *s, ...) __attribute__((format (printf, 3, 4)));
 
 /* current preprocessor state */
 /* everything is in this structure to avoid polluting the global symbol space */
